@@ -1,0 +1,1 @@
+// temporary compinent for invoice detail page
