@@ -1,5 +1,6 @@
 import InvoiceInfoHeader from "./InvoiceInfoHeader"
 import { useState } from "react"
+import TempInvoiceDetailPage from "./Temp/TempInvoiceDetailPage"
 
 function InvoiceDetailsPage() {
   const [invoiceInfoHeader, setInvoiceInfoHeader] = useState({
@@ -21,6 +22,7 @@ function InvoiceDetailsPage() {
               <InvoiceInfoHeader handleInvoiceChange={handleInvoiceInfoHeaderChange} />
             </div>
           </div>
+            <TempInvoiceDetailPage invoiceData={invoiceInfoHeader}/>
     </>
   )
 }
